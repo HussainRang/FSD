@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<HTML>
+    
+    <HEAD>
+        <TITLE> HTML FORM </TITLE>
+        <style>
+
+            .heading{
+                text-align: center;
+                font-family: fantasy;
+                color: #143F6B;
+                font-size: 50px;
+                letter-spacing: 6px;
+                word-spacing: 12px;
+            }
+
+            .background{
+                background-color: #90c069;
+                
+                border-width: 2px;
+                border-color: #51557E;
+                border-style:dotted;
+            }
+
+            .headings{
+                font-family:cursive;
+                letter-spacing: 3px;
+                margin-left: 20px;
+                color:rgb(9, 43, 95);
+            }
+
+            .boxes{
+                margin-left: 25px;
+                
+            }
+
+        </style>
+    </HEAD>
+
+    <BODY style="background-color: #c4ce8b;">
+        
+        <h1 class="heading"> REGISTRATION FORM </h1>
+
+        <FORM class="background">
+            
+                
+            <h2 class="headings"> FIRST NAME: </h2>
+            <input type:"text" id="fname" required="" class="boxes">
+
+            <h2 class="headings"> LAST NAME: </h2>
+            <input type="text" id="lname" required="" class="boxes">
+
+            <h2 class="headings"> ADDRESS: </h2>
+            <textarea required="" class="boxes"></textarea>
+
+            <br/>
+            
+
+            <h2 class="headings"> GENDER: </h2>
+            <input type="radio" name="gender" value="m" required="" class="boxes">Male
+            <input type="radio" name="gender" value="f" required="" class="boxes">Female
+            <input type="radio" name="gender" value="o" required="" class="boxes">Other
+
+            <h2 class="headings"> COUNTRY </h2>
+            <SELECT required="" class="boxes">
+                <OPTION> INDIA </OPTION>
+                <OPTION> AUSTRALIA </OPTION>
+                <OPTION> AMERICA </OPTION>
+            </SELECT>
+
+            <h2 class="headings"> HOBBIES </h2>
+            <input type="checkbox" name="hobbies[]" value="d" class="boxes"> Dancing
+            <input type="checkbox" name="hobbies[]" value="s" class="boxes"> Singing
+            <input type="checkbox" name="hobbies[]" value="g" class="boxes"> Games
+            <input type="checkbox" name="hobbies[]" value="r" class="boxes"> Reading  
+
+
+            <h2 class="headings"> IMAGE </h2>
+            <input type="file" name="image" required="" class="boxes">
+
+            <br/>
+            <br/>
+            <br/>
+            <input type="Submit" value="Send" class="boxes"/>
+            <input type="Reset" value="Reset" class="boxes"/>
+            <br/>
+
+                
+        </FORM>
+
+    </BODY>
+
+</HTML>
+
+
+
+
